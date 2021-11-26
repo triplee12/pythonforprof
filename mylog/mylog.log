@@ -1,0 +1,6 @@
+2021-11-26 08:39:56,274 : root : DEBUG : Test
+2021-11-26 08:39:56,274 : root : DEBUG : Debug message here
+2021-11-26 08:39:56,274 : root : INFO : Info message here
+2021-11-26 08:39:56,274 : root : WARNING : Warning message here
+2021-11-26 08:39:56,274 : root : ERROR : Error message here
+2021-11-26 08:39:56,274 : root : CRITICAL : Critical message here
