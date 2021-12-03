@@ -27,26 +27,26 @@ protocol - Defined means of application communication
 logging.basicConfig(format="%(levelname)s - %(asctime)s - %(message)s", datefmt='%H:%M:%S', level=logging.DEBUG)
 
 # TCP client
-# def client(server, port):
-#     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#     address = (server, port)
-#     logging.info(f'Connecting... {server} : {port}')
-#     sock.connect(address)
-#     logging.info('Connected!')
-#     logging.info('Send')
-#     sock.send(b'Hello\r\n')
-#     logging.info("Recieve")
-#     data = sock.recv(1024)
-#     logging.info('Closing...')
-#     sock.close()
-#     logging.info(f'Data: {data}')
+def client(server, port):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    address = (server, port)
+    logging.info(f'Connecting... {server} : {port}')
+    sock.connect(address)
+    logging.info('Connected!')
+    logging.info('Send')
+    sock.send(b'Hello\r\n')
+    logging.info("Recieve")
+    data = sock.recv(1024)
+    logging.info('Closing...')
+    sock.close()
+    logging.info(f'Data: {data}')
 
 
-# def main():
-#     client("youtube.com", 81)
+def main():
+    client("youtube.com", 81)
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 
 # TCP server
